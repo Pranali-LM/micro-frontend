@@ -13,12 +13,16 @@ import { Router } from '@angular/router';
 export class AppComponent {
   title = 'micro-frontend-1';
   constructor(private router: Router) {}
-
   onCountryListClick() {
     console.log('Country List link clicked!');
-    this.router.navigate(['/countryList']);
+    this.router.navigate(['countryList']);
   }
   onHomeClick() {
     console.log('Home link clicked!');
+    console.log("home");
+    this.router.navigate(['/'])
+  }
+  OnMapView () {
+    this.router.navigate(['mapview'])
   }
 }
